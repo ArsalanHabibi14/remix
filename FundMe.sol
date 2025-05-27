@@ -5,15 +5,22 @@ import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/Ag
 
 contract FundMe {
     uint256 public myValue=5e18;
+    address[] public userSenders;
+    mapping(address => uint256) public fundsCollected;
+
     function fund() public payable {
+        
         myValue = myValue + 2;
         require(getConversionRate(msg.value) >= myValue, "can't send this transaction!");
+        userSenders.push(msg.sender);
+        fundsCollected[msg.sender] += msg.value;
+
     }
     // 0x1b44F3514812d835EB1BDB0acB33d3fA3351Ee43
     function getPrice() public view returns(uint256){
       AggregatorV3Interface pricefeed =AggregatorV3Interface(0x1b44F3514812d835EB1BDB0acB33d3fA3351Ee43);
       (,int256  price,,,) = pricefeed.latestRoundData();
-      return uint256(price * 0.1e18) ;
+      return uint256(price * 0.1e18);
     }
 
     function getConversionRate(uint256 ethAmount) public view returns (uint256){
@@ -23,4 +30,8 @@ contract FundMe {
     }
 
     function withdraw() public {}
+
+    function show_transactions(uint256 num) public view returns(address) {
+      return userSenders[num];
+    }
 }

@@ -15,6 +15,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "fundsCollected",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "ethAmount",
 						"type": "uint256"
@@ -52,6 +71,44 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "show_transactions",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "userSenders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -101,11 +158,11 @@
 			]
 		},
 		"FundMe.sol": {
-			"keccak256": "0xc9de5e9cf3a521b28fd11588a483de9d0b1e73720b19197809dd3eb9a597a641",
+			"keccak256": "0xb9b97d9ba6cfd82c88796cc20fa6379d93a071899c27919b53cddbbf9a91037c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://53cbcb62a0825afc08beeb40fc615f451850fe4e30ad6170527a29585b9a2d83",
-				"dweb:/ipfs/QmPGw7Mow7eWtnSmifXpvBQJbkGbPS9feo1EJRzGuBp4gb"
+				"bzz-raw://8ee85889be6bb44465072e519ee782bb204b71bb9115b0d919be0f6d2303d803",
+				"dweb:/ipfs/QmTedav8isbWTgpHZ3v4iY6JhD7M4zR7UqELNYZn3Ymkfk"
 			]
 		}
 	},
