@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "show_num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MyNewFund.sol": "MyNewFund"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"MyNewFund.sol": {
+			"keccak256": "0x5c36e134a2c9b2c2dd8e02d7722ad1521cd756dc1afcbe1aa0013d2031c9a83f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ebcaffda78dfc38251fb6073a661d382d13291a622c0507605e2cbf39b5ac44f",
+				"dweb:/ipfs/Qmbc1qMLT4LGF93Jn6xboFbr4H4Qz8HNDFWZmAUAGonCVJ"
+			]
+		}
+	},
+	"version": 1
+}
