@@ -32,38 +32,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "ethAmount",
-						"type": "uint256"
-					}
-				],
-				"name": "getConversionRate",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getPrice",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "myValue",
 				"outputs": [
@@ -158,11 +126,19 @@
 			]
 		},
 		"FundMe.sol": {
-			"keccak256": "0xee13587e50549a69e32476186a3b16eb5ce64e42db79c0272adfdb3c587b68be",
+			"keccak256": "0xed3373865fb0903ff2f284f42b0755bc0847bbbf65a1c1b645b7d96aace9e5cc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://de9a6b86b548773d9f13ede2c81a23ad187245d43d3ffb1fabd33d8cdb684f8a",
-				"dweb:/ipfs/QmXNLxdM1A9RKgCSEjtXvN5BZ5yADYVbeAh8E6PxuM66Hx"
+				"bzz-raw://ce46cafc481e0cb715a8f7cf2c1fa1daf71d6e13b4501e81029c86fab62b1eb3",
+				"dweb:/ipfs/QmTqAARfaAzcTJmjsEqUVTdsD3Duy7wD84FaJro2ncZxxW"
+			]
+		},
+		"MyNewFund.sol": {
+			"keccak256": "0x293d0aa04e986ac89d196ded5f0e351c665d4ccdbe507e97056048c4fe36a5d6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1019f5c0a77096de2e4bf5d1a61678ede8408dca72fc0e2ecc71184ad637e77e",
+				"dweb:/ipfs/QmdNJ1f6SjGzhAK8RsVbSQxrKvQgzK6bYDH6fRVcTW9BNt"
 			]
 		}
 	},

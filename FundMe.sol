@@ -1,9 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
-import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+import {MyNewFund} from "./MyNewFund.sol";
 
 
 contract FundMe {
+    using MyNewFund for uint256;
+
     uint256 public myValue=5e18;
     address[] public userSenders;
     mapping(address => uint256) public fundsCollected;
@@ -11,25 +13,22 @@ contract FundMe {
     function fund() public payable {
         
         myValue = myValue + 2;
-        require(getConversionRate(msg.value) >= myValue, "can't send this transaction!");
+        require(msg.value.getConversionRate() >= myValue, "can't send this transaction!");
         userSenders.push(msg.sender);
         fundsCollected[msg.sender] += msg.value;
 
     }
-    // 0x1b44F3514812d835EB1BDB0acB33d3fA3351Ee43
-    function getPrice() public view returns(uint256){
-      AggregatorV3Interface pricefeed =AggregatorV3Interface(0x1b44F3514812d835EB1BDB0acB33d3fA3351Ee43);
-      (,int256  price,,,) = pricefeed.latestRoundData();
-      return uint256(price * 0.1e18);
-    }
 
-    function getConversionRate(uint256 ethAmount) public view returns (uint256){
-      uint256 eth_price = getPrice();
-      uint256 ethAmountInUSD = (ethAmount*eth_price)/1e18;
-      return ethAmountInUSD;
-    }
+    function withdraw() public {
+      for (uint256 i = 0;i < userSenders.length;i++){
+        address sender = userSenders[i];
+        fundsCollected[sender] = 0;
+      }
+      userSenders = new address[](0);
 
-    function withdraw() public {}
+      (bool callSuccess, ) = payable(msg.sender).call{value: address(this).balance}("");
+      require(callSuccess, "Call fail!");
+    }
 
     function show_transactions(uint256 num) public view returns(address) {
       return userSenders[num];
