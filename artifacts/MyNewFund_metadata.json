@@ -74,11 +74,11 @@
 			]
 		},
 		"MyNewFund.sol": {
-			"keccak256": "0x293d0aa04e986ac89d196ded5f0e351c665d4ccdbe507e97056048c4fe36a5d6",
+			"keccak256": "0xbbb58f1b65f1c9b7fff595c3daeaf68cd98b1247289d2736d33d51cf4a86d812",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1019f5c0a77096de2e4bf5d1a61678ede8408dca72fc0e2ecc71184ad637e77e",
-				"dweb:/ipfs/QmdNJ1f6SjGzhAK8RsVbSQxrKvQgzK6bYDH6fRVcTW9BNt"
+				"bzz-raw://0cdf250f350269dcb1666073afe3588e6ebc8ffff5a4c201157fbb1b94c28a91",
+				"dweb:/ipfs/QmcuogZKeJYMBZCfiwJ7aXeJmCBFyfiVr5SyV7yhg7kK7z"
 			]
 		}
 	},

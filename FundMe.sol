@@ -10,16 +10,21 @@ contract FundMe {
     address[] public userSenders;
     mapping(address => uint256) public fundsCollected;
 
+    address public owner;
+
+    constructor() {
+      owner = msg.sender;
+    }
+
     function fund() public payable {
-        
-        myValue = myValue + 2;
         require(msg.value.getConversionRate() >= myValue, "can't send this transaction!");
         userSenders.push(msg.sender);
         fundsCollected[msg.sender] += msg.value;
 
+
     }
 
-    function withdraw() public {
+    function withdraw() public CheckOwner{
       for (uint256 i = 0;i < userSenders.length;i++){
         address sender = userSenders[i];
         fundsCollected[sender] = 0;
@@ -32,5 +37,10 @@ contract FundMe {
 
     function show_transactions(uint256 num) public view returns(address) {
       return userSenders[num];
+    }
+
+    modifier CheckOwner() {
+      require(msg.sender == owner, "Must be owner!");
+      _;
     }
 }

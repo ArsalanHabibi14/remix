@@ -8,7 +8,7 @@ library MyNewFund{
     function getPrice() public view returns(uint256){
       AggregatorV3Interface pricefeed =AggregatorV3Interface(0x1b44F3514812d835EB1BDB0acB33d3fA3351Ee43);
       (,int256  price,,,) = pricefeed.latestRoundData();
-      return uint256(price * 0.1e18);
+      return uint256(price * 1e18);
     }
 
     function getConversionRate(uint256 ethAmount) public view returns (uint256){
