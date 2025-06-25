@@ -4,104 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "AcceptDonate",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "data",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "donor",
-						"type": "address"
-					}
-				],
-				"name": "getDonation",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "showTotalBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "withdraw",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -130,11 +33,11 @@
 	},
 	"sources": {
 		"practice.sol": {
-			"keccak256": "0xb09fede8d6f8e78967efa23d57dcbe0eef7cb27b1dbe6dd961247db16427fd09",
+			"keccak256": "0xb3f189bc933a06fc5fc01645e000155b4d2f54d0f23bcff8892a71301cc175d0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://54ef05e4dcacfd4d781bbc0a88d9a4bd4b8fb72fcac98860bd5ef3a5cb4f101a",
-				"dweb:/ipfs/QmSQovD5acQg9iaviv5p9ZvpfqLd3iACtqZkSiQC3j55jv"
+				"bzz-raw://c9c69ed4944808f78a797949903af52bf18e4e7e2e58a4dcabd4ccc0703347bb",
+				"dweb:/ipfs/QmXGWZvHj7SeqhhwFia897E3dGiM98TjjoHZnkzqSDgBAi"
 			]
 		}
 	},

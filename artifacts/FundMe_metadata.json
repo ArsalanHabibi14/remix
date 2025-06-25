@@ -12,6 +12,11 @@
 			},
 			{
 				"inputs": [],
+				"name": "NotOwner",
+				"type": "error"
+			},
+			{
+				"inputs": [],
 				"name": "fund",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -144,11 +149,11 @@
 			]
 		},
 		"FundMe.sol": {
-			"keccak256": "0x959a7f59e7a05ba24f09c9892e411c5fb9d64a893931a4a24d7e6078bfe15813",
+			"keccak256": "0xafa8f09e349ee30591315d2fc0a6d089fbf206b2084976f83e2149aef192968a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://234892e6ccde481ec553066b98c82fbaf77f356629418a18a49af19cc591c401",
-				"dweb:/ipfs/QmcEFBDrSs1XnFVEL2sB4fLNZbTo25n4f3VDrtt3SDWjKf"
+				"bzz-raw://df2c36754f9affb28406e5359467b232a98585f284946bd2023e8587034a954a",
+				"dweb:/ipfs/Qmds4osYbT5zxqs3qTV4W1QoqRxq8Ajy2Ho4jsEi8U57RE"
 			]
 		},
 		"MyNewFund.sol": {

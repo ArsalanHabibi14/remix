@@ -2,13 +2,15 @@
 pragma solidity ^0.8.20;
 import {MyNewFund} from "./MyNewFund.sol";
 
+error NotOwner();
+
 contract FundMe {
     using MyNewFund for uint256;
 
     uint256 public myValue=5e18;
     address[] public userSenders;
     mapping(address => uint256) public fundsCollected;
-
+    
     address public owner;
 
     constructor() {
@@ -39,7 +41,7 @@ contract FundMe {
     }
 
     modifier CheckOwner() {
-      require(msg.sender == owner, "Must be owner!");
+      if (msg.sender != owner){revert NotOwner();}
       _;
     }
 }
